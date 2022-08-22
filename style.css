@@ -1,0 +1,223 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+  max-width: 90%;
+  margin: 30px auto;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+}
+.left-side-header {
+  display: flex;
+  align-items: center;
+}
+
+.right-side-header {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+.right-side-header .trains-list {
+  font-weight: 400;
+}
+
+.right-side-header #timer {
+  font-weight: 400;
+}
+
+.start-button {
+  width: 75px;
+  height: 20px;
+  margin-left: 20px;
+}
+
+.main-title {
+  font-size: 20px;
+}
+
+table {
+  border-spacing: 0;
+  width: 100%;
+  font-size: 14px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+table thead {
+  background-color: #fc0398;
+  color: white;
+  height: 40px;
+}
+
+table tbody .table-row-class {
+  height: 150px;
+}
+
+table tbody .table-row-class td {
+  padding: 10px;
+}
+
+  .railway-road {
+    background-image: url('./assets/road-texture.jpg');
+    background-size: 50px;
+    height: 16px;
+  }
+  
+  table tbody .table-row-class .road-class {
+    min-width: 600px;
+    width: 600px;
+    position: relative;
+    padding: 0;
+  }
+  .timetable-list {
+    display: none;
+  }
+
+  table tbody .table-row-class .td-station {
+    width: 150px;
+  }
+  .station{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    height: 30px ;
+    margin-top: -20px;
+    z-index: 1;
+  }
+  .station hr {
+    border: 0.1px solid;
+    width: 20px;
+    transform: rotate(90deg);
+  }
+  .station p {
+    font-size: 16px;
+    transform: rotate(270deg);
+  }
+  .station img {
+    width: 20px;
+    height: 16px;
+    margin-bottom: 5px;
+  }
+  .row-background {
+    background-color: #f0f4f7;;
+  }
+
+  .inside-tracker {
+    position: absolute;
+    z-index: 100;
+  }
+  .inside-tracker img{
+    width: 16px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 1px;
+    margin-left: -8px;
+  }
+
+  .collapsed-route {
+    display: none;
+  }
+  .trains-list {
+    display: flex;
+    margin-right: 10px;
+    padding: 0;
+    list-style: none;
+  }
+  .trains-list li {
+    padding: 0 5px;
+  }
+  .td-sub-route {
+    display: none;
+  }
+  .sub-station {
+    display: none;
+  }
+  @media only screen and (max-width: 1299px) {
+    .td-station {
+      padding: 10px;
+      text-align: center;
+      max-width: 10%;
+    }
+    .td-sub-route {
+      display: revert;
+    }
+    .td-route {
+      display: none;
+    }
+    .table-name-cell {
+      width: 15%;
+    }
+    .route-name {
+      display: none;
+    }
+    .route {
+      display: none;
+    }
+    .collapsed-route {
+      display: revert;
+    }
+    .separate-route {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .sub-station {
+      display: revert;
+    }
+    .td-sub-route {
+      display: none;
+    }
+    .td-route {
+      display: revert;
+    }
+    .route-name {
+      display: revert;
+    }
+    .route {
+      display: revert;
+    }
+    .collapsed-route {
+      display: none;
+    }
+    table thead {
+      text-align: left;
+    }
+    table thead th {
+      padding-left: 20px;
+      border-left: 1px solid #fff;
+    }
+    table thead th:first-child {
+      border: 0px;
+    }
+    .timetable-list {
+      margin: 0;
+    }
+    .road-class {
+      display: none;
+    }
+    table td {
+      width: 25%;
+    }
+
+    table .td-station {
+      display: none;
+    }
+    .start-button {
+      display: none;
+    }
+
+    .right-side-header {
+      display: none;
+    }
+    .next-station {
+      display: none;
+    }
+
+  }

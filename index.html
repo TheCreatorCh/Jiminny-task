@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jiminny app</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="app-header">
+            <div class="left-side-header">
+                <h1 class="main-title">
+                    Jiminny Trainspotting
+                </h1>
+                <button onclick="startRoad()" class="start-button" id="start-button">
+                    Start
+                </button>
+            </div>
+            <div class="right-side-header">
+                <span>
+                    Trains in Transit:
+                </span>
+                <ul class="trains-list">
+
+                </ul>
+                <div>
+                    Current Time: <span id='timer'> 09:00</span>
+                </div>
+            </div>
+        </header>
+        <main class="parent">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="route-name">Name</th>
+                        <th class="route">Route</th>
+                        <th class="collapsed-route">
+                            Name / Route
+                        </th>
+                        <th class="timetable">Timetable</th>
+                        <th class="next-station">Next station</th>
+                        <th>Trains</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-row-class">
+                        <td class="table-name-cell">
+                            <span class="td-name"></span><span class="td-sub-route"></span>
+                        </td>
+                        <td class="td-route"></td>
+                        <td class="road-class">
+                            <div id="road-1" class="railway-road">
+                                <div class="timetable-list"></div>
+                                <div class="inside-tracker">
+                                    <img src="./assets/train.svg" alt="train">
+                                </div>
+                        </td>
+                        <td class="td-station"></td>
+                        <td class="sub-station"></td>
+                        <td class="train-id"></td>
+                    </tr>
+                    <tr class="table-row-class row-background">
+                        <td class="table-name-cell">
+                            <span class="td-name"></span><span class="td-sub-route"></span>
+                        </td>
+                        <td class="td-route"></td>
+                        <td class="road-class">
+                            <div id="road-2" class="railway-road">
+                                <div class="timetable-list"></div>
+                                <div class="inside-tracker">
+                                    <img src="./assets/train.svg" alt="train">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="td-station"></td>
+                        <td class="sub-station"></td>
+                        <td class="train-id"></td>
+                    </tr>
+                    <tr class="table-row-class">
+                        <td class="table-name-cell">
+                            <span class="td-name"></span><span class="td-sub-route"></span>
+                        </td>
+                        <td class="td-route"></td>
+                        <td class="road-class">
+                            <div id="road-3" class="railway-road">
+                                <div class="timetable-list"></div>
+                                <div class="inside-tracker">
+                                    <img src="./assets/train.svg" alt="train">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="td-station"></td>
+                        <td class="sub-station"></td>
+                        <td class="train-id"></td>
+                    </tr>
+                    <tr class="table-row-class row-background">
+                        <td class="table-name-cell">
+                            <span class="td-name"></span><span class="td-sub-route"></span>
+                        </td>
+                        <td class="td-route"></td>
+                        <td class="road-class">
+                            <div id="road-4" class="railway-road">
+                                <div class="timetable-list"></div>
+                                <div class="inside-tracker">
+                                    <img src="./assets/train.svg" alt="train">
+                                </div>
+                            </div>
+                        </td>
+                        <td class="td-station"></td>
+                        <td class="sub-station"></td>
+                        <td class="train-id"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
